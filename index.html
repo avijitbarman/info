@@ -317,12 +317,13 @@
         </div>
       </div>
 
-      <form id="contactForm" class="contact-card"
-      action="https://api.web3forms.com/submit"
-      method="POST">
-
-    <input type="hidden" name="access_key"
-           value="0b5996b0-18b9-403b-9a5a-379f8adf477f">
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="0b5996b0-18b9-403b-9a5a-379f8adf477f">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
         <label>
           <span>Your name</span>
           <input name="name" required placeholder="Full name" />
