@@ -1,3 +1,4 @@
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -317,25 +318,33 @@
         </div>
       </div>
 
-<form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="0b5996b0-18b9-403b-9a5a-379f8adf477f">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit</button>
-</form>
+      <form id="contactForm" class="contact-card"
+            action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key"
+               value="0b5996b0-18b9-403b-9a5a-379f8adf477f">
+
+        <input type="hidden" name="subject"
+               value="New Portfolio Contact Message">
+
+        <input type="hidden" name="from_name"
+               value="Avijit Barman Portfolio">
+
         <label>
           <span>Your name</span>
           <input name="name" required placeholder="Full name" />
         </label>
+
         <label>
           <span>Your email</span>
           <input name="email" type="email" required placeholder="you@example.com" />
         </label>
+
         <label>
           <span>Message</span>
           <textarea name="message" rows="4" placeholder="Say hi..." required></textarea>
         </label>
+
         <div class="form-row">
           <button type="submit" class="btn btn-primary">Send message <i class="fa-solid fa-paper-plane"></i></button>
           <button type="button" class="btn btn-ghost btn-clear">Clear</button>
@@ -365,3 +374,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+```
