@@ -317,7 +317,12 @@
         </div>
       </div>
 
-      <form id="contactForm" class="contact-card">
+      <form id="contactForm" class="contact-card"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden" name="access_key"
+           value="0b5996b0-18b9-403b-9a5a-379f8adf477f">
         <label>
           <span>Your name</span>
           <input name="name" required placeholder="Full name" />
